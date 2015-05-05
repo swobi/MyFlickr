@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><web-app xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.5" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+	<servlet>
+		<servlet-name>signup</servlet-name>
+		<servlet-class>myflcikr.MyFlcikrV1Servlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>signup</servlet-name>
+		<url-pattern>/signup</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>signin</servlet-name>
+		<servlet-class>myflcikr.SigninServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>signin</servlet-name>
+		<url-pattern>/signin</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>logout</servlet-name>
+		<servlet-class>myflcikr.LogoutServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>logout</servlet-name>
+		<url-pattern>/logout</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>profile</servlet-name>
+		<servlet-class>myflcikr.ProfileServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>profile</servlet-name>
+		<url-pattern>/profile</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>friends</servlet-name>
+		<servlet-class>myflcikr.FriendsServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>friends</servlet-name>
+		<url-pattern>/friends</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>usergroups</servlet-name>
+		<servlet-class>myflcikr.UserGroupsServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>usergroups</servlet-name>
+		<url-pattern>/usergroups</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>group</servlet-name>
+		<servlet-class>myflcikr.GroupServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>group</servlet-name>
+		<url-pattern>/group</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>contact</servlet-name>
+		<servlet-class>myflcikr.ContactServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>contact</servlet-name>
+		<url-pattern>/contact</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>favorites</servlet-name>
+		<servlet-class>myflcikr.FavoritesServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>favorites</servlet-name>
+		<url-pattern>/favorites</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>addfriend</servlet-name>
+		<servlet-class>myflcikr.AddFriendServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>addfriend</servlet-name>
+		<url-pattern>/addfriend</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>delete</servlet-name>
+		<servlet-class>myflcikr.DeleteServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>delete</servlet-name>
+		<url-pattern>/delete</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>upload</servlet-name>
+		<servlet-class>myflcikr.UploadServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>upload</servlet-name>
+		<url-pattern>/upload</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>configPhoto</servlet-name>
+		<servlet-class>myflcikr.ConfigPhotoServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>configPhoto</servlet-name>
+		<url-pattern>/configPhoto</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>imageServe</servlet-name>
+		<servlet-class>myflcikr.ImageServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>imageServe</servlet-name>
+		<url-pattern>/imageServe</url-pattern>
+	</servlet-mapping>
+	
+ <servlet>
+  <servlet-name>SystemServiceServlet</servlet-name>
+  <servlet-class>com.google.api.server.spi.SystemServiceServlet</servlet-class>
+  <init-param>
+   <param-name>services</param-name>
+   <param-value/>
+  </init-param>
+ </servlet>
+ <servlet-mapping>
+  <servlet-name>SystemServiceServlet</servlet-name>
+  <url-pattern>/_ah/spi/*</url-pattern>
+ </servlet-mapping>
+ <welcome-file-list>
+		<welcome-file>Login.jsp</welcome-file>
+	</welcome-file-list>
+</web-app>
